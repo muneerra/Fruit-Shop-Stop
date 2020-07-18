@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="money">
+            <label for="money">Enter Money</label>
+            <input type="number" name="money" id="budget" value="0">
+            <button onclick="add_balance()" class="add">Add</button>
+        </div>
+        <div class="product">
+            <div class="items">
+                <img src="apple.jpg" alt="">
+                <span class="pricing-container">Rs 10<span class="quantity">
+                        <button id="addApple">+</button>
+                        <span id="appleQty">0</span>
+                        <button id="minusApple">-</button></span></span>
+            </div>
+            <div class="items">
+                <img src="mango.jpg" alt="">
+                <span class="pricing-container">Rs 20<span class="quantity">
+                        <button id="addMango">+</button>
+                        <span id="mangoQty">0</span>
+                        <button id="minusMango">-</button></span></span>
+            </div>
+            <div class="items">
+                <img src="banana.jpg" alt="">
+                <span class="pricing-container">Rs 5<span class="quantity">
+                        <button id="addBanana">+</button>
+                        <span id="minusBanana">0</span>
+                        <button id="bananaQty">-</button></span></span>
+            </div>
+        </div>
+        <div class="total">
+            <span>Total </span>
+            <span id="total_value">0</span>
+            <span>Rs</span>
+            <span>Blalance </span>
+            <span id="balancevalue">0</span>
+            <span>Rs</span>
+        </div>
+
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
